@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly sevings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="money.css">
+</head>
+<body>
+    <!-- website Title -->
+    <header> <h1 class="text-3xl font-bold text-cyan-800 text-center pt-8 pb-10">Monthly Expenses and Savings</h1></header>
+
+    <main>
+        <section class="display: flex text-2xl ">
+            <div class="ml-12 mr-20"> <img src="img/money.jpeg" alt=""></div>
+        
+
+        
+           <div id="background-size" class="bg-center bg-gray-100 text-center">
+            <div >
+                <h4 class="font-semibold text-center p-2">Income</h4>
+                Income: <input id="income-ammount" class="border-solid border-2 rounded border-indigo-600" type="text">
+            </div>
+            <div class="font-semibold text-center p-2">Expenses</div>
+            <div >
+                <div class="block p-2">
+                    <label class="w-20" for="">Food:  </label>
+                    <input id="food-expenses" class="border-solid border-2 rounded border-indigo-600" type="text">
+                </div>
+                
+            <div class="p-2">
+                <label class="w-20" for="">Rent:  </label> 
+                <input id="rent-expenses" class="border-solid border-2 rounded border-indigo-600" type="text"></div>
+            <div class="p-2"><label class="" for="">Clothes:</label>
+                <input id="cloth-expenses" class="border-solid border-2 rounded border-indigo-600" type="text"></div>
+            </div>
+<button id="expenses-amount" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-8 rounded text-center"> Calculate</button>
+
+<!-- total expenses and remaining balance part -->
+<div>
+    <h5 class="font-semibold text-center p-2">Total Expenses: <span id="total-expenses">0</span></h5>
+    <h5 class="font-semibold text-center p-2">Balance: <span id="remaining-balance">0</span> </h5>
+
+   
+</div>
+<div>
+    <label class="" for="">Save:</label>
+    <input id="save-persentage" class="border-solid border-2 rounded border-indigo-600 w-20" type="text">
+    <label class="" for="">%</label>
+    <button id="save-amount" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-8 mt-8 rounded text-center"> Save</button>
+</div>
+<div>
+    <h5 class="font-semibold text-center p-2">Saving Amount: <span id="total-saving">0</span></h5>
+    <h5 class="font-semibold text-center p-2">Remaining Balance: <span id="total-balance">0</span> </h5>
+</div>
+           </div>
+        </section>
+    </main>
+<script src="m.js"></script>
+</body>
+</html>
